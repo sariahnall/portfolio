@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+.logo{
+    width: 100px;
+    border-radius: 20%;
+}
+.grid-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.social-media-icons{
+    width: 60px;
+}
