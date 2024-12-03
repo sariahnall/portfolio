@@ -11,12 +11,18 @@
 body{
     margin: 0;
 }
+body h1, h4{
+    font-family: var(--heading-font);
+}
+body p{
+    font-family: var(--paragraph-font);
+}
 header{
     display: grid;
     grid-template-columns: auto 150px;
     background-color: var(--primary-color);
 }
-#logo_link{
+.logo_link{
     padding-top: 5px;
     justify-self: center;
     align-self: center;
@@ -27,7 +33,8 @@ header{
 }
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
+    font-family: var(--paragraph-font);
 }
 nav a{
     text-align: center;
@@ -42,7 +49,7 @@ nav a:hover{
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;
+    margin-top: -200px;
 }
 #hero-box{
     grid-column: 1/4;
@@ -55,7 +62,7 @@ nav a:hover{
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 100px;
+    margin-top: 250px;
 }
 #hero-msg h1, #hero-msg h4{
     text-align: center;
@@ -64,7 +71,6 @@ nav a:hover{
 }
 .home-title{
     font-size: 2em;
-    font-family: var(--heading-font);
     margin-top: 10px;
 }
 .home-para{
@@ -72,10 +78,23 @@ nav a:hover{
     margin-top: -30px;
     font-size: 1.2em;
 }
-.grid-main{
+#home-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10%;
+}
+.grid-item{
+    grid-column: 1/3;
+    margin-left: 20%;
+}
+#grid-head{
+    margin-top: 20%;
+    margin-left: 80px;
+    font-size: 1.5em;
+}
+.grid-img{
+    width: 200%;
+    margin-top: -20%;
 }
 footer{
     background-color: var(--accent2-color);
@@ -91,7 +110,7 @@ footer a{
     color: white;
 }
 footer a:hover{
-    color: #73B5BF;
+    color: var(--accent1-color);
 }
 footer p{
     font-size: 1.2em;
@@ -102,4 +121,34 @@ footer .social img{
 }
 footer p:hover{
     text-decoration: underline;
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+        #hero, .home-grid{
+        display: block;
+        height: auto;
+    }
+    #hero{
+        margin-top: 0;
+    }
+    #hero-msg{
+        margin-top: 0%;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
