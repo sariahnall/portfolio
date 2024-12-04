@@ -20,7 +20,7 @@ body p{
 header{
     display: grid;
     grid-template-columns: auto 150px;
-    background-color: var(--primary-color);
+    background-color: var(--accent2-color);
 }
 .logo_link{
     padding-top: 5px;
@@ -35,6 +35,7 @@ nav {
     display: flex;
     justify-content: left;
     font-family: var(--paragraph-font);
+    font-size: large;
 }
 nav a{
     text-align: center;
@@ -43,7 +44,7 @@ nav a{
     padding: 35px;
 }
 nav a:hover{
-    background-color: var(--accent2-color);
+    background-color: var(--accent1-color);
     color: black;
 }
 #hero {
@@ -66,8 +67,8 @@ nav a:hover{
 }
 #hero-msg h1, #hero-msg h4{
     text-align: center;
-    color: white;
-    background-color: gray;
+    color: black;
+    background-color: var(--primary-color);
 }
 .home-title{
     font-size: 2em;
