@@ -138,11 +138,15 @@ footer p:hover{
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
-    max-height: 475px;
+    max-height: 535px;
     text-align: center;
     grid-column: 2/3;
     grid-row: 2/4;
 }
+.title {
+    color: grey;
+    font-size: 18px;
+  }
 .card-button{
     outline: 0;
     padding: 8px 0px;
@@ -172,7 +176,7 @@ a:hover{
 .grid-subhead{
     grid-column: 3/4;
     grid-row: 3/4;
-    margin-top: -25px;
+    margin-top: -30px;
 }
 #abouttwo{
     grid-column: 3/4;
