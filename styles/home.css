@@ -144,7 +144,7 @@ footer p:hover{
     grid-row: 2/4;
 }
 .title {
-    color: grey;
+    color: rgb(96, 96, 96);
     font-size: 18px;
   }
 .card-button{
