@@ -143,7 +143,7 @@ footer p:hover{
     grid-column: 2/3;
     grid-row: 2/4;
 }
-.title {
+.about-title {
     color: rgb(96, 96, 96);
     font-size: 18px;
   }
@@ -188,8 +188,46 @@ a:hover{
     grid-row: 3/4
 }
 
-
-
+/* projects css */
+#project-title{
+    justify-items: center;
+}
+.project-content{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+.column{
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+}
+.project-imgs{
+    width: 100%;
+    object-fit: cover;
+}
+.column-text{
+    padding: 15px;
+}
+.project-type{
+    color: white;
+    padding: 20px 10px;
+    margin: auto -15px;
+    background-color: var(--secondary-color);
+}
+.column-text p{
+    font-size: 14px;
+}
+.column-text h3{
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+    padding: 10px 0px;
+    margin: -20px -15px auto -15px;    
+    background-color: var(--secondary-color);
+}
 
 @media screen and (max-width: 900px) {
     nav, footer {
