@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sariah Nall | Portfolio | Projects</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="aboutme.html">ABOUT ME</a>
+        </nav>
+        <a class="logo_link" href="index.html">
+            <img class="logo" src="images/portfolio-logo.png" alt="Sariah Nall Logo">
+        </a>
+    </header>
+    <main>
+        <h1>Contact Me</h1>
+        <div id="feedback"></div>
+        <form action="#" method="post">
+            <p>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name" />
+            </p>
+            <p>
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="user_email" />
+            </p>
+            <p>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </p>
+            <p class="button">
+                <button type="submit">Send message</button>
+            </p>
+        </form>
+    </main>
+    <footer>
+        <a class="logo_link" href="index.html">
+            <img class="logo" src="images/portfolio-logo.png" alt="Sariah Nall Logo">
+        </a>
+        <p>SNall Projects &copy; 2024 - Sariah Nall</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="contactme.html">Contact Me</a></p>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img class=".social-media-icons" src="images/facebook-icon.png" alt="fb icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img class=".social-media-icons" src="images/linkedin-icon.png" alt="linkedin icon">
+            </a>
+            <a href="https://www.instagram.com/sariah_nall428/">
+                <img class=".social-media-icons" src="images/instagram-icon.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>

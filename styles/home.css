@@ -225,6 +225,63 @@ a:hover{
     margin: -20px -15px auto -15px;    
     background-color: var(--secondary-color);
 }
+/* Contact Me page */
+form {
+    display: inline-block;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  p + p {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline-style: solid;
+    outline-color: #000;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+  
+  .button {
+    padding-left: 90px; 
+  }
+  
+  button {
+    margin-left: 0.5em;
+  }
+  #feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    display: none;      
+  }
+  .moveDown {
+      margin-top: 3em;
+  }
 
 @media screen and (max-width: 900px) {
     /* All pages */
