@@ -11,6 +11,7 @@
 }
 body{
     margin: 0;
+    text-align: center;
 }
 body h1, h2, h3, h4{
     font-family: var(--heading-font);
@@ -228,45 +229,36 @@ a:hover{
 /* Contact Me page */
 form {
     display: inline-block;
-    /* Form outline */
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
   }
-  
   p + p {
     margin-top: 1em;
   }
-  
   label {
-    /* Uniform size & alignment */
     display: inline-block;
     min-width: 90px;
     text-align: right;
   }
-  
   input,
   textarea {
     width: 300px;
     box-sizing: border-box;
     border: 1px solid #999;
   }
-  
   input:focus,
   textarea:focus {
     outline-style: solid;
     outline-color: #000;
   }
-  
   textarea {
     vertical-align: top;
     height: 5em;
   }
-  
   .button {
     padding-left: 90px; 
   }
-  
   button {
     margin-left: 0.5em;
   }
@@ -298,10 +290,9 @@ form {
     /* Home Page */
     #hero, #home-grid{
         display: block;
-        height: auto;
     }
     #hero{
-        margin-top: 0;
+        margin-top: 0%;
     }
     #hero-msg{
         margin-top: 0%;
@@ -312,9 +303,15 @@ form {
     .home-title {
         font-size: 2em;
     }
+    .grid-item{
+        display: block;
+        text-align: left;
+        margin-top: -2%;
+    }
+
     .grid-img{
         width: 70%;
-        margin-left: 10%;
+        margin: 10% auto;
     }
     /* About me page */
 
